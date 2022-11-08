@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin_SignUp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="73dp"
+        android:id="@+id/admin_im1"
+        android:src="@drawable/head_white" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="26dp"
+        android:id="@+id/admin_im2"
+        android:src="@drawable/back" />
+
+    <TextView
+        android:id="@+id/admin_tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:fontFamily="serif"
+
+        android:text="SIGN UP"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/admin_tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/admin_tv1"
+        android:layout_marginLeft="34dp"
+        android:layout_marginTop="60dp"
+        android:fontFamily="serif"
+        android:text="WELCOME"
+        android:textColor="@color/green1"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/admin_tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/admin_tv1"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="60dp"
+        android:fontFamily="serif"
+        android:text="admin!"
+        android:textColor="@color/black"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/admin_tv4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/admin_tv2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:fontFamily="serif"
+        android:text="Click here for client sign up"
+        android:textColor="@color/green2"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/admin_ed1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/admin_tv4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/custom_input"
+        android:drawablePadding="20dp"
+        android:fontFamily="serif"
+        android:hint="Phone Number"
+        android:paddingLeft="15dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/admin_ed2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/admin_ed1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/custom_input"
+        android:drawablePadding="20dp"
+        android:fontFamily="serif"
+        android:hint="Password"
+        android:paddingLeft="15dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/admin_ed3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/admin_ed2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/custom_input"
+        android:drawablePadding="20dp"
+        android:fontFamily="serif"
+        android:hint="Confirm Password"
+        android:paddingLeft="15dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/admin_tv5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/admin_ed3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:fontFamily="serif"
+        android:text="OR"
+        android:textColor="@color/black" />
+
+    <ImageView
+        android:id="@+id/admin_im3"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/admin_tv5"
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/facebook" />
+
+    <ImageView
+        android:id="@+id/admin_im4"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/admin_tv5"
+        android:layout_marginLeft="201dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/google" />
+
+    <TextView
+        android:id="@+id/admin_tv6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/admin_im3"
+        android:layout_marginLeft="57dp"
+        android:layout_marginTop="55dp"
+        android:fontFamily="serif"
+        android:text="Already have an account?"
+        android:textColor="@color/black"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/admin_tv7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/admin_im3"
+        android:layout_marginLeft="262dp"
+        android:layout_marginTop="55dp"
+        android:fontFamily="serif"
+        android:text="Sign In"
+        android:textColor="@color/green1"
+        android:textSize="15dp" />
+
+    <Button
+        android:id="@+id/admin_btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:layout_below="@id/admin_tv7"
+        android:layout_alignStart="@+id/admin_tv6"
+        android:layout_alignEnd="@+id/admin_tv7"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="49dp"
+        android:layout_marginEnd="-29dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="108dp"
+        android:backgroundTint="@color/green1"
+        android:fontFamily="serif"
+        android:text="Sign Up"
+        android:textColor="@color/white"
+        android:textSize="25dp" />
+
+</RelativeLayout>
+
+
+
