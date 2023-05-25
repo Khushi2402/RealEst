@@ -1,124 +1,146 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+
+
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/card1"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_centerHorizontal="true"
-    android:layout_marginHorizontal="15dp"
-    android:layout_marginVertical="40dp"
-    app:cardBackgroundColor="@color/card_color"
-    app:cardCornerRadius="15dp">
+    android:layout_marginTop="25dp"
     tools:context=".Property_card">
 
-    <RelativeLayout
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/property_card"
         android:layout_width="match_parent"
-        android:layout_height="172dp">
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginVertical="40dp"
+        app:cardBackgroundColor="@color/card_color"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints">
 
-        <ImageView
-            android:id="@+id/image"
-            android:layout_width="137dp"
-            android:layout_height="146dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_gravity="center_vertical"
-            android:layout_marginVertical="13dp"
-            android:layout_marginStart="15dp"
-            android:layout_marginLeft="15dp"
-            android:layout_marginTop="12dp"
-            android:layout_marginEnd="211dp"
-            android:layout_marginBottom="14dp"
-            android:src="@drawable/card1" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="172dp">
 
-        <ImageButton
-            android:id="@+id/like"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:layout_marginLeft="330dp"
-            android:layout_marginTop="15dp"
-            android:background="@drawable/like_button" />
+            <ImageView
+                android:id="@+id/prop_image"
+                android:layout_width="137dp"
+                android:layout_height="146dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginVertical="13dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="211dp"
+                android:layout_marginBottom="14dp"
+                android:src="@drawable/card1" />
 
-        <TextView
-            android:id="@+id/name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="167dp"
-            android:layout_marginTop="15dp"
-            android:text="AABBCC"
-            android:textColor="@color/black"
-            android:textSize="15dp" />
+            <ImageButton
+                android:id="@+id/prop_like"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="330dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/like_button" />
 
-        <TextView
-            android:id="@+id/type"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="167dp"
-            android:layout_marginTop="38dp"
-            android:text="Residential Property"
-            android:textColor="@color/black"
-            android:textSize="10dp" />
+            <TextView
+                android:id="@+id/prop_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="167dp"
+                android:layout_marginTop="15dp"
+                android:text="abc"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
 
-        <ImageView
-            android:layout_width="12dp"
-            android:layout_height="12dp"
-            android:layout_marginLeft="167dp"
-            android:layout_marginTop="67dp"
-            android:src="@drawable/location"/>
+            <TextView
+                android:id="@+id/prop_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="167dp"
+                android:layout_marginTop="38dp"
+                android:text="Residential Property"
+                android:textColor="@color/black"
+                android:textSize="10dp" />
 
-        <TextView
-            android:id="@+id/address"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="185dp"
-            android:layout_marginTop="67dp"
-            android:text="Nagpur, MH"
-            android:textSize="7dp" />
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginLeft="167dp"
+                android:layout_marginTop="67dp"
+                android:src="@drawable/location" />
 
-        <ImageView
-            android:layout_width="12dp"
-            android:layout_height="12dp"
-            android:layout_marginLeft="167dp"
-            android:layout_marginTop="85dp"
-            android:src="@drawable/length" />
+            <TextView
+                android:id="@+id/prop_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="185dp"
+                android:layout_marginTop="67dp"
+                android:text="Nagpur, MH"
+                android:textSize="7dp" />
 
-        <TextView
-            android:id="@+id/size"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="185dp"
-            android:layout_marginTop="85dp"
-            android:text="40,000 sq. ft"
-            android:textSize="7dp" />
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginLeft="167dp"
+                android:layout_marginTop="85dp"
+                android:src="@drawable/length" />
 
-        <ImageView
-            android:layout_width="12dp"
-            android:layout_height="12dp"
-            android:layout_marginLeft="167dp"
-            android:layout_marginTop="103dp"
-            android:src="@drawable/desc" />
+            <TextView
+                android:id="@+id/prop_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="185dp"
+                android:layout_marginTop="85dp"
+                android:text="40,000 sq. ft"
+                android:textSize="7dp" />
 
-        <TextView
-            android:id="@+id/description"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="185dp"
-            android:layout_marginTop="103dp"
-            android:text="Fully Furnished, Ready to Move In"
-            android:textSize="7dp" />
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginLeft="167dp"
+                android:layout_marginTop="103dp"
+                android:src="@drawable/desc" />
 
-        <Button
-            android:id="@+id/details"
-            android:layout_width="75dp"
-            android:layout_height="30dp"
-            android:layout_marginLeft="270dp"
-            android:layout_marginTop="129dp"
-            android:backgroundTint="@color/green1"
-            android:text="View Details"
-            android:textSize="5dp" />
+            <TextView
+                android:id="@+id/prop_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="185dp"
+                android:layout_marginTop="103dp"
+                android:text="Fully Furnished, Ready to Move In"
+                android:textSize="7dp" />
 
-    </RelativeLayout>
+            <Button
+                android:id="@+id/prop_details"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="270dp"
+                android:layout_marginTop="129dp"
+                android:backgroundTint="@color/green1"
+                android:text="View Details"
+                android:textSize="5dp" />
 
-</androidx.cardview.widget.CardView>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
