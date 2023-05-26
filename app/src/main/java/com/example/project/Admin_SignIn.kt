@@ -3,6 +3,7 @@ package com.example.project
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Handler
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
@@ -25,6 +26,7 @@ class Admin_SignIn : AppCompatActivity() {
 
         // to go to sign up page
         val signup = findViewById<TextView>(R.id.tv5 )
+        val loadingDialog = LoadingDialog(this@Admin_SignIn)
 
         signup.setOnClickListener{
             val intent = Intent(this, Admin_SignUp::class.java)
@@ -34,9 +36,16 @@ class Admin_SignIn : AppCompatActivity() {
         val signInButton = findViewById<Button>(R.id.btn1)
 
         signInButton.setOnClickListener{
+            loadingDialog.startLoadingDialog()
+            val handler = Handler()
+            handler.postDelayed({
+                loadingDialog.dismissDialog()
+            }, 5000)
             performSignIn()
         }
     }
+
+
 
     private fun performSignIn() {
         val inEmail = findViewById<EditText>(R.id.signIn_ed1)

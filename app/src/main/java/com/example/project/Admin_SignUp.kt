@@ -4,6 +4,7 @@ import android.app.ProgressDialog
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Handler
 import android.view.View
 import android.view.inputmethod.InputBinding
 import android.widget.*
@@ -25,6 +26,8 @@ class Admin_SignUp : AppCompatActivity() {
         auth = Firebase.auth
 
         val signin = findViewById<TextView>(R.id.tv7)
+        val loadingDialog = LoadingDialog(this@Admin_SignUp)
+
         signin.setOnClickListener {
             val intent = Intent(this, Admin_SignIn::class.java)
             startActivity(intent)
@@ -33,6 +36,11 @@ class Admin_SignUp : AppCompatActivity() {
         val signUpButton = findViewById<Button>(R.id.admin_btn1)
 
         signUpButton.setOnClickListener {
+            loadingDialog.startLoadingDialog()
+            val handler = Handler()
+            handler.postDelayed({
+                loadingDialog.dismissDialog()
+            }, 5000)
             performSignUp()
         }
     }

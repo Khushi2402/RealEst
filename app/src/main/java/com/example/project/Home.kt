@@ -17,6 +17,9 @@ class Home : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
 
+
+        supportActionBar?.hide()
+
         navController = findNavController(R.id.NavHostFragment)
         bottomNavigationView  = findViewById(R.id.bottomNavigationView)
         val appBarConfiguration = AppBarConfiguration(
