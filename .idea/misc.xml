@@ -26,27 +26,22 @@
         <entry key="..\:/Users/khushi/Project/app/src/main/res/layout/fragment_profile.xml" value="0.1962962962962963" />
         <entry key="..\:/Users/khushi/Project/app/src/main/res/layout/property_item_shimmer.xml" value="0.2076923076923077" />
         <entry key="..\:/Users/khushi/Project/app/src/main/res/menu/bottom_nav_menu.xml" value="0.2" />
-<<<<<<< HEAD
         <entry key="..\:/Users/khushi/projects/RealEst/app/src/main/res/drawable/head_white.xml" value="0.1705" />
         <entry key="..\:/Users/khushi/projects/RealEst/app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.1705" />
         <entry key="..\:/Users/khushi/projects/RealEst/app/src/main/res/font/montserrat_font_family.xml" value="0.284375" />
+        <entry key="..\:/Users/khushi/projects/RealEst/app/src/main/res/layout/activity_account_settings.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/khushi/projects/RealEst/app/src/main/res/layout/activity_admin_sign_in.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/khushi/projects/RealEst/app/src/main/res/layout/activity_admin_sign_up.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/khushi/projects/RealEst/app/src/main/res/layout/activity_edit_profile.xml" value="0.2" />
         <entry key="..\:/Users/khushi/projects/RealEst/app/src/main/res/layout/activity_home.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/khushi/projects/RealEst/app/src/main/res/layout/activity_main.xml" value="0.23703703703703705" />
+        <entry key="..\:/Users/khushi/projects/RealEst/app/src/main/res/layout/activity_property_card.xml" value="0.264" />
+        <entry key="..\:/Users/khushi/projects/RealEst/app/src/main/res/layout/activity_shortlisten_properties.xml" value="0.24010416666666667" />
+        <entry key="..\:/Users/khushi/projects/RealEst/app/src/main/res/layout/activity_viewed_properties.xml" value="0.24010416666666667" />
         <entry key="..\:/Users/khushi/projects/RealEst/app/src/main/res/layout/fragment_home.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/khushi/projects/RealEst/app/src/main/res/layout/fragment_profile.xml" value="0.2" />
+        <entry key="..\:/Users/khushi/projects/RealEst/app/src/main/res/layout/fragment_profile.xml" value="0.264" />
         <entry key="..\:/Users/khushi/projects/RealEst/app/src/main/res/layout/loading_screen.xml" value="0.1" />
         <entry key="..\:/Users/khushi/projects/RealEst/app/src/main/res/menu/bottom_nav_menu.xml" value="0.25416666666666665" />
-=======
-        <entry key="app/src/main/res/layout/activity_home.xml" value="0.17864583333333334" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.19610507246376813" />
-        <entry key="app/src/main/res/layout/activity_property_card.xml" value="0.335" />
-        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.17864583333333334" />
-        <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.19157608695652173" />
-        <entry key="app/src/main/res/layout/property_item_shimmer.xml" value="0.17864583333333334" />
->>>>>>> 467b4c97c83b4a6a8bc48a6f58b34ff4a673ae48
       </map>
     </option>
   </component>

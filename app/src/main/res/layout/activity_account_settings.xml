@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AccountSettings">
+
+    <ImageView
+        android:id="@+id/im1"
+        android:layout_width="match_parent"
+        android:layout_height="73dp"
+        android:src="@drawable/head_white" />
+
+    <LinearLayout
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/back"
+            android:background="@android:color/transparent"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="Account Settings"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/tv1"
+        android:text="Account Status"
+        android:layout_marginLeft="40dp"
+        android:background="@android:color/transparent"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:textSize="12dp"
+        android:fontFamily="@font/montserrat_regular"
+        />
+
+    <Button
+        android:id="@+id/language"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/status"
+        android:text="Language"
+        android:layout_marginLeft="40dp"
+        android:background="@android:color/transparent"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:textSize="12dp"
+        android:fontFamily="@font/montserrat_regular"
+        />
+
+    <Button
+        android:id="@+id/data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/language"
+        android:text="Cellular Data"
+        android:layout_marginLeft="40dp"
+        android:background="@android:color/transparent"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:textSize="12dp"
+        android:fontFamily="@font/montserrat_regular"
+        />
+
+    <Button
+        android:id="@+id/browser_settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/data"
+        android:text="Account Status"
+        android:layout_marginLeft="40dp"
+        android:background="@android:color/transparent"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:textSize="12dp"
+        android:fontFamily="@font/montserrat_regular"
+        />
+
+    <Button
+        android:id="@+id/review_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/browser_settings"
+        android:text="Account Status"
+        android:layout_marginLeft="40dp"
+        android:background="@android:color/transparent"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:textSize="12dp"
+        android:fontFamily="@font/montserrat_regular"
+        />
+
+    <Button
+        android:id="@+id/switch_admin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/review_activity"
+        android:text="Switch to Admin Account"
+        android:layout_marginLeft="40dp"
+        android:background="@android:color/transparent"
+        android:textAllCaps="false"
+        android:textColor="@color/green2"
+        android:textSize="12dp"
+        android:fontFamily="@font/montserrat_regular"
+        />
+
+    <Button
+        android:id="@+id/add_admin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/switch_admin"
+        android:text="Add another Admin account"
+        android:layout_marginLeft="40dp"
+        android:background="@android:color/transparent"
+        android:textAllCaps="false"
+        android:textColor="@color/green2"
+        android:textSize="12dp"
+        android:fontFamily="@font/montserrat_regular"
+        />
+
+</RelativeLayout>

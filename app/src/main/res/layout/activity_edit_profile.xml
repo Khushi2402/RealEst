@@ -81,8 +81,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/montserrat_semibold"
                 android:text="Khushi Kesharwani"
-                android:textSize="24sp"
-                android:textStyle="bold" />
+                android:textSize="24sp" />
 
             <!-- Job Title -->
             <TextView

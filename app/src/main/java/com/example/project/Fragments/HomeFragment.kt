@@ -84,7 +84,7 @@ class HomeFragment : Fragment() {
 
         val request = Request.Builder()
                 // add your ip address
-            .url("http://192.168.41.86:5050/property")
+            .url("http://192.168.43.176:5050/property")
             .build()
 
         client.newCall(request).enqueue(object : Callback {

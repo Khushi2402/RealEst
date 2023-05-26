@@ -7,7 +7,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
-import androidx.appcompat.app.AppCompatActivity
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -36,6 +35,36 @@ class ProfileFragment : Fragment() {
         personal_details_button.setOnClickListener {
             launchEditProfileActivity()
         }
+
+        val account_settings_button = view.findViewById<Button>(R.id.account_settings_button)
+        account_settings_button.setOnClickListener {
+            launchAccountSettingsActivity()
+        }
+
+        val viewed_properties_button = view.findViewById<Button>(R.id.viewed_properties_button)
+        viewed_properties_button.setOnClickListener {
+            launchViewedPropertiesActivity()
+        }
+
+        val shortlisted_properties_button = view.findViewById<Button>(R.id.shortlisted_properties_button)
+        shortlisted_properties_button.setOnClickListener {
+            launchShortlistedPropertiesActivity()
+        }
+    }
+
+    private fun launchShortlistedPropertiesActivity() {
+        val intent = Intent(requireContext(), ShortlistedProperties::class.java)
+        startActivity(intent)
+    }
+
+    private fun launchViewedPropertiesActivity() {
+        val intent = Intent(requireContext(), ViewedProperties::class.java)
+        startActivity(intent)
+    }
+
+    private fun launchAccountSettingsActivity() {
+        val intent = Intent(requireContext(), AccountSettings::class.java)
+        startActivity(intent)
     }
 
     private fun launchEditProfileActivity() {

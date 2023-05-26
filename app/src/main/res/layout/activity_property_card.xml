@@ -1,8 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-
-
-
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -63,6 +59,7 @@
                 android:layout_marginTop="15dp"
                 android:text="abc"
                 android:textColor="@color/black"
+                android:fontFamily="@font/montserrat_bold"
                 android:textSize="15dp" />
 
             <TextView
@@ -72,6 +69,7 @@
                 android:layout_marginLeft="167dp"
                 android:layout_marginTop="38dp"
                 android:text="Residential Property"
+                android:fontFamily="@font/montserrat_semibold"
                 android:textColor="@color/black"
                 android:textSize="10dp" />
 
@@ -88,6 +86,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="185dp"
                 android:layout_marginTop="67dp"
+                android:fontFamily="@font/montserrat_regular"
                 android:text="Nagpur, MH"
                 android:textSize="7dp" />
 
@@ -105,6 +104,7 @@
                 android:layout_marginLeft="185dp"
                 android:layout_marginTop="85dp"
                 android:text="40,000 sq. ft"
+                android:fontFamily="@font/montserrat_regular"
                 android:textSize="7dp" />
 
             <ImageView
@@ -112,6 +112,7 @@
                 android:layout_height="12dp"
                 android:layout_marginLeft="167dp"
                 android:layout_marginTop="103dp"
+
                 android:src="@drawable/desc" />
 
             <TextView
@@ -120,6 +121,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="185dp"
                 android:layout_marginTop="103dp"
+                android:fontFamily="@font/montserrat_regular"
                 android:text="Fully Furnished, Ready to Move In"
                 android:textSize="7dp" />
 
@@ -127,10 +129,14 @@
                 android:id="@+id/prop_details"
                 android:layout_width="75dp"
                 android:layout_height="30dp"
-                android:layout_marginLeft="270dp"
+                android:layout_alignParentEnd="true"
                 android:layout_marginTop="129dp"
-                android:backgroundTint="@color/green1"
+                android:layout_marginEnd="30dp"
+                android:backgroundTint="@color/green3"
+                android:fontFamily="@font/montserrat_semibold"
                 android:text="View Details"
+                android:textColor="@color/black"
+                android:textAllCaps="false"
                 android:textSize="5dp" />
 
         </RelativeLayout>
