@@ -45,15 +45,17 @@ class Admin_SignUp : AppCompatActivity() {
         }
     }
     private fun performSignUp() {
-        val email = findViewById<EditText>(R.id.ed1)
-        val password = findViewById<EditText>(R.id.ed2)
-        val con_password = findViewById<EditText>(R.id.ed3)
+        val name = findViewById<EditText>(R.id.ed1)
+        val email = findViewById<EditText>(R.id.ed2)
+        val password = findViewById<EditText>(R.id.ed3)
+        val con_password = findViewById<EditText>(R.id.ed4)
 
         if (email.text.isEmpty() || password.text.isEmpty() || con_password.text.isEmpty()) {
             Toast.makeText(this, "Please fill all the fields",
                 Toast.LENGTH_SHORT).show()
         }
 
+        val inputName = name.text.toString()
         val inputEmail = email.text.toString()
         val inputPassword = password.text.toString()
         val con_inputPassword = con_password.text.toString()
@@ -80,5 +82,9 @@ class Admin_SignUp : AppCompatActivity() {
                 Toast.makeText(this, "Error Occurred ${it.localizedMessage}",
                     Toast.LENGTH_SHORT).show()
             }
+
+        val intent = Intent(this, ProfileFragment::class.java)
+        intent.putExtra("name", inputName)
+        startActivity(intent)
     }
 }

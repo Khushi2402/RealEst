@@ -75,21 +75,21 @@
             android:orientation="vertical">
 
             <!-- Profile Name -->
-            <TextView
-                android:id="@+id/profileName"
+            <EditText
+                android:id="@+id/edit_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/montserrat_semibold"
-                android:text="Khushi Kesharwani"
-                android:textSize="24sp" />
+                android:hint="Khushi Kesharwani"
+                android:textSize="20sp" />
 
             <!-- Job Title -->
-            <TextView
-                android:id="@+id/jobTitle"
+            <EditText
+                android:id="@+id/edit_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/montserrat_regular"
-                android:text="Freelancer"
+                android:hint="Freelancer"
                 android:textSize="16sp" />
 
         </LinearLayout>
@@ -112,7 +112,7 @@
 
     <EditText
         android:id="@+id/edit_email"
-        android:layout_width="wrap_content"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/email"
         android:layout_marginLeft="51dp"
@@ -137,7 +137,7 @@
 
     <EditText
         android:id="@+id/edit_phone"
-        android:layout_width="wrap_content"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/phone"
         android:layout_marginLeft="51dp"
@@ -162,7 +162,7 @@
 
     <EditText
         android:id="@+id/edit_password"
-        android:layout_width="wrap_content"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/password"
         android:layout_marginLeft="51dp"
@@ -188,7 +188,7 @@
 
     <EditText
         android:id="@+id/edit_location"
-        android:layout_width="wrap_content"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/location"
         android:layout_marginLeft="51dp"
